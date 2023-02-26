@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Find your movies.</h1>
+            <a href="/watchlist.html">My watchlist</a>
+        </header>
+            <form id="search-form">
+              <input 
+                type="text" 
+                id="search-text" 
+                name="search-text" 
+                value=""
+                placeholder="search for a movie"
+                autofocus
+                >
+                <select name="type" class="type-selector" id="type-selector">
+                    <option value="movie">Movies</option>
+                    <option value="series">TV Series</option>
+                  </select>
+              <button type="submit" id="submit-btn">Search</button>
+            </form>
+        <div class="content-container" id="content-container"></div>
+            <img src="/img/no-data-initial.png" id="start-thumbnail">
+            <h1 class="message" id="message">Unable to find what you’re looking for. Please try another search.</h1>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>
